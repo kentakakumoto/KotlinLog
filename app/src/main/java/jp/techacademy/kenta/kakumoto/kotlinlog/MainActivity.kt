@@ -27,6 +27,13 @@ class MainActivity : AppCompatActivity() {
             Log.d("kotlintest", "str1とstr3は異なります。")
         }
 
+        val man = Human("Taro",12)
+        val woman = Human("Hanako",13)
+        man.say()
+        man.think()
+        woman.say()
+        woman.think()
+
 
 
        }
