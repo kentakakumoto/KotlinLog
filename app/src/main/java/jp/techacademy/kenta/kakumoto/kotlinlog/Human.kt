@@ -3,12 +3,14 @@ package jp.techacademy.kenta.kakumoto.kotlinlog
 import android.util.Log
 
 class Human : Animal, Thinkable {
-    constructor(name:String, age:Int):super(name,age){
+
+    var hobby :String
+
+    constructor(name:String, age:Int, hobby:String) : super(name,age) {
+        this.hobby = hobby
     }
 
-    companion object{
-        val hobby = "釣り"
-    }
+
 
     override fun say(){
         Log.d("kotlintest", "私の名前は"+this.name+"です。年は"+this.age+"歳です。")
